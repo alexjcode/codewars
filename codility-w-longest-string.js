@@ -1,7 +1,3 @@
-// Codility Eval for Wayfair
-// Alexander Jamal
-// 10/9/2019
-
 const solution = (A, B, C) => {
   let ltrA = {
     name: 'a',
