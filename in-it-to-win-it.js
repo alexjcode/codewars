@@ -31,7 +31,31 @@
 // and then return an object with the individual counts.
 ​
 
-// Examples
+const bestOdds = (tickets, raffleEntries) => {
+  const myTix = countTickets(tickets)
+  const redOdds = myTix.red / raffleEntries.red
+  const greenOdds = myTix.green / raffleEntries.green
+  const blueOdds = myTix.blue / raffleEntries.blue
+  const best = Math.max(redOdds, greenOdds, blueOdds)
+  let color
+  if (best === redOdds) {
+    color = 'red'
+  } else if (best === greenOdds) {
+    color = 'green'
+  } else if (best === blueOdds) {
+    color = 'blue'
+  } else {
+    color = 'other'
+  }
+  return `You have the best odds of winning the ${color} raffle.`
+}
+
+const countTickets = myTickets => {
+  //
+}
+
+// => myRaffleEntries 
+
 
 // Input:
 // for bestOdds() function
