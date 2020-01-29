@@ -31,6 +31,10 @@
 // and then return an object with the individual counts.
 ​
 
+const countTickets = myTickets => {
+  //
+}
+
 const bestOdds = (tickets, raffleEntries) => {
   const myTix = countTickets(tickets)
   const redOdds = myTix.red / raffleEntries.red
@@ -48,10 +52,6 @@ const bestOdds = (tickets, raffleEntries) => {
     color = 'other'
   }
   return `You have the best odds of winning the ${color} raffle.`
-}
-
-const countTickets = myTickets => {
-  //
 }
 
 // => myRaffleEntries 
